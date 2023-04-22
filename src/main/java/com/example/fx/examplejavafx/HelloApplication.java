@@ -1,7 +1,6 @@
 package com.example.fx.examplejavafx;
 
 import javafx.application.Application;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,8 +8,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-
-import static java.awt.Event.ESCAPE;
 
 public class HelloApplication extends Application {
     @Override
@@ -23,7 +20,7 @@ public class HelloApplication extends Application {
         stage.show();
 
         stage.addEventHandler(KeyEvent.KEY_TYPED, keyEvent -> {
-            if (keyEvent.getCharacter().charAt(0) == ESCAPE) {
+            if (keyEvent.getCharacter().charAt(0) == 27 /* escape */) {
                 stage.close();
                 stage.hide();
             }
