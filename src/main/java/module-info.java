@@ -8,6 +8,6 @@ module com.example.fx.examplejavafx {
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
 
-    opens com.example.fx.examplejavafx to javafx.fxml;
-    exports com.example.fx.examplejavafx;
+    opens com.example.fx to javafx.fxml;
+    exports com.example.fx;
 }

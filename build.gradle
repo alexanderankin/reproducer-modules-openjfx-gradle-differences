@@ -14,8 +14,8 @@ description = 'example-javafx'
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 application {
-    mainModule.set 'com.example.fx.examplejavafx'
-    mainClass.set 'com.example.fx.examplejavafx.HelloApplication'
+    mainModule.set 'com.example.fx'
+    mainClass.set 'com.example.fx.HelloApplication'
 }
 
 repositories {
