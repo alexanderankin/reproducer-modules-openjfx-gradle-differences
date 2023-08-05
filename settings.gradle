@@ -3,3 +3,4 @@
  */
 
 rootProject.name = 'example-javafx'
+include 'ex1'
